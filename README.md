@@ -1,11 +1,15 @@
 # Superfactorial Calculator
 
-It calculates the superfactorial of a number
+It calculates the superfactorial of a number.
+
+## Build
+
+`gcc main.c -o sf`
 
 ## Usage
 
 ```
-./c 4
+./sf 4
 288.00000
 ```
 
