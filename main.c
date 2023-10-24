@@ -1,18 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h> //atoi
 
-double factorial(int n){
-  double factorial = n;
+int factorial(int n){
+  int factorial = n;
   for(int i = n-1;i > 0;i--){
-    factorial = factorial * (n - i);
+    factorial *= (n - i);
   }
   return factorial;
 }
 
-double superfactorial(int n){
+int superfactorial(int n){
   int f = factorial(n);
   for(int i = n-1; i > 0; i--){
-    f = f * factorial(i);
+    f *= factorial(i);
   }
 
   return f;
@@ -20,7 +20,7 @@ double superfactorial(int n){
 
 int main(int argc, char *argv[])
 {
-  printf("%lf\n", superfactorial(atoi(argv[1])));
+  printf("%d\n", superfactorial(atoi(argv[1])));
   return 0;
 }
 
