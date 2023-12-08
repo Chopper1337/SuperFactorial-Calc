@@ -34,7 +34,7 @@ int main(int argc, char *argv[]) {
     }
         // If the user has provided an arg, directly show the result
     else
-        printf("%lf.\n", superfactorial(atoi(argv[1])));
+        printf("%.lf\n", superfactorial(atoi(argv[1])));
 
     return 0;
 }
